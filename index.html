@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Project page for “Controlling Embedding Spaces with Text-Conditioned Transformations,” ECCV 2026.">
+  <meta name="keywords"
+        content="ControlEmbed, text-conditioned transformations, embedding spaces, attribute-aware retrieval, multi-clustering, ECCV 2026">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Controlling Embedding Spaces with Text-Conditioned Transformations</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <style>
+    .section {
+      padding: 1.5rem 1.5rem !important;
+    }
+
+    figure {
+      margin-top: 1rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+
+    .paper-figure {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .paper-table {
+      width: 100%;
+      max-width: 42rem;
+    }
+
+    .equation-block {
+      overflow-x: auto;
+      margin: 1rem 0;
+      padding: 0.75rem 0.5rem;
+      text-align: center;
+    }
+
+    .equation-block mjx-container {
+      min-width: max-content;
+      margin: 0 !important;
+    }
+
+    .figure-caption {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .publication-links .fas {
+      font-family: inherit;
+    }
+
+    .publication-venue {
+      margin: 0.75rem auto;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']],
+        macros: {
+          vv: '\\mathbf{v}',
+          mathds: ['\\mathbb{#1}', 1]
+        }
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Controlling Embedding Spaces with Text-Conditioned Transformations</h1>
+            <div class="is-size-5 publication-venue">ECCV 2026</div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><a href="https://joefioresi718.github.io/">Joseph Fioresi</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="https://fabiancaba.com/">Fabian Caba Heilbron</a><sup>2</sup>,</span>
+              <span class="author-block"><a href="https://github.com/pankajnathani">Pankaj Nathani</a><sup>2</sup>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=p8gsO3gAAAAJ&amp;hl=en&amp;oi=ao">Mubarak Shah</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="https://kushalkafle.com/">Kushal Kafle</a><sup>2</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> Institute of Artificial Intelligence, University of Central Florida</span>
+              <br>
+              <span class="author-block"><sup>2</sup> Adobe Research</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="./static/pdfs/controlembed_arxiv.pdf"
+                     download="controlembed_arxiv.pdf"
+                     aria-label="Download the ControlEmbed paper PDF"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" aria-hidden="true">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
+                  <a href="./static/images/stanford40_train.csv"
+                     download="stanford40_train.csv"
+                     aria-label="Download the manually annotated Stanford40 training labels CSV"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" aria-hidden="true">
+                      <i class="fas fa-file-csv"></i>
+                    </span>
+                    <span>Stanford40 Annotations</span>
+                  </a>
+                </span> -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2602.05965"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://youtu.be/3a9qeJUD1GU?si=DlpYsj1AFW6iQX1J"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+                <!-- Code Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/UCF-CRCV/autogen-lts"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span> -->
+                <!-- Poster Link -->
+                <!-- <span class="link-block">
+                  <a href="./static/images/lts_poster.pdf"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-image"></i>
+                    </span>
+                    <span>Poster</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>Multimodal embedding spaces in models like CLIP enable powerful capabilities such as semantic similarity retrieval and cross-modal zero-shot classification. These embeddings compress high-level semantics into a single vector, which comes at the cost of primarily expressing a dominant semantics like main object while suppressing other important attributes such as camera angle or color tone. We propose a text-conditioned transformation of visual embeddings that makes such attributes explicitly accessible. Given a natural language description of an attribute category (e.g., “color” or “art style”), a network generates an affine transformation that emphasizes the specified attribute. Conditioning on text enables it to learn many attributes simultaneously, accessing them at inference time through an intuitive interface. The network is trained to align transformed embeddings with the frozen latent space, enabling retrieval using existing large-scale embeddings without any re-encoding. When applied to a full set, the same mechanism transforms the latent space for attribute disentanglement tasks such as multi-clustering. By operating directly in latent space, our method provides a unified and efficient framework for controlling embedding spaces, demonstrating state-of-the-art performance across both attribute-based retrieval and multi-attribute organization tasks with near-zero inference cost.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small" id="overview">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">Overview</h2>
+            <div class="content has-text-justified">
+              <p>ControlEmbed maps a natural-language attribute description such as “color,” “camera angle,” or “mood” to an affine transformation of frozen visual embeddings. Applying the transform only to a query enables attribute-aware retrieval over an unchanged gallery while applying it globally reorganizes the same embedding set for attribute-specific clustering.</p>
+            </div>
+            <figure>
+              <img class="paper-figure"
+                   src="./static/images/teaser_fig.svg"
+                   alt="Diagram of a text-conditioned hypernetwork generating query-only and global embedding transformations for retrieval and clustering."
+                   style="max-width: 100%; height: auto;">
+              <figcaption class="figure-caption"><strong>Figure 1:</strong> <strong>Overview of text-conditioned embedding-space transformations.</strong> (Left) We propose a hypernetwork that maps natural-language attribute descriptions to a modification function. Applying this transformation to a query embedding produces an attribute-aware representation that emphasizes the requested property. (Right) By controlling the embedding space with attribute transforms, the same mechanism enables both attribute-aware retrieval and attribute-specific clustering.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="method">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Method</h2>
+          <figure>
+            <img class="paper-figure"
+                 src="./static/images/main_architecture.svg"
+                 alt="Multi-attribute training workflow using a text-conditioned affine hypernetwork, multi-positive contrastive learning, and multimodal alignment."
+                 style="max-width: 100%; height: auto;">
+            <figcaption class="figure-caption"><strong>Figure 2:</strong> <strong>Multi-attribute training workflow.</strong> An attribute category is sampled (e.g., “action” or “location”) and passed through the proposed hypernetwork to generate a transformation function, which is applied to a query embedding to produce attribute-focused representations aligned with base embeddings of images sharing the same category attribute label via a multi-positive contrastive loss. An additional multimodal guidance loss further aligns transformed features with the text embedding of the corresponding attribute label. The process iterates over the full set of valid attributes, where the set of positive/negative samples varies based on selected category.</figcaption>
+          </figure>
+          <div class="content has-text-justified">
+            <p><strong>Text-conditioned transformation.</strong> ControlEmbed leaves the pretrained vision-language model frozen and learns one small generator of feature-space transformations. An attribute phrase such as “color” or “camera angle” is encoded as \(\mathbf{t}\), and the hypernetwork \(H_{\phi}\) converts that representation into an affine matrix \(\mathbf{W}\) and bias \(\mathbf{b}\). The resulting operator acts directly on a frozen image embedding \(\mathbf{v}\):</p>
+            <div class="equation-block" aria-label="Text-conditioned affine transformation">
+              \[
+              \mathbf{t}=f_t(T),\quad \mathbf{v}=f_v(I),\qquad (\mathbf{W},\mathbf{b})=H_{\phi}(\mathbf{t}),\quad \mathbf{v}'=\mathbf{v}\mathbf{W}^{\top}+\mathbf{b}.
+              \]
+            </div>
+            <p>Changing the text input selects a different comparison axis without producing a new encoder or attribute-specific checkpoint. Because the vision and text encoders remain frozen, the method operates entirely on stored features and does not require image re-encoding.</p>
+
+            <p><strong>Multi-attribute training.</strong> At each optimization step, one attribute taxonomy is chosen and its labels determine the positive groups in the batch. A transformed query is compared against unmodified base embeddings: samples sharing the selected attribute label are treated as positives, while the remaining samples provide negatives. Rotating through taxonomies lets the same hypernetwork learn many attribute controls without forcing unrelated label spaces into a single fixed grouping.</p>
+            <div class="equation-block" aria-label="Multi-positive contrastive loss">
+              \[
+              \mathcal{L}_{SR}=-\frac{1}{N} \sum_{i,j=1}^N \frac{\mathds{1}_{i,j}}{\sum_{k=1}^N \mathds{1}_{i,k}} \log \frac{\exp(\vv_{i}^{'\top} \vv_{j} / \tau)}{\sum_{k=1}^N \exp(\vv_{i}^{'\top} \vv_{k} / \tau)}
+              \]
+            </div>
+            <p>Here, the feature vectors are \(\ell_2\)-normalized, \(N\) is the batch size, \(\tau\) controls the contrastive temperature, and \(\mathds{1}_{i,j}\) identifies pairs with the same label under the active taxonomy. The loss pulls each transformed query toward matching frozen features while preserving the original space as the retrieval target. A multimodal alignment term additionally relates transformed image features to text embeddings of the attribute labels, grounding the learned transformations in language.</p>
+
+            <p><strong>Two inference modes.</strong> Query mode changes only the query vector, leaving gallery features untouched so existing indexes can be reused. Global mode applies the generated operator to every stored vector, yielding an attribute-specific space for clustering. Both modes use the same trained hypernetwork and differ only in where the transformation is applied.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="results">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Results</h2>
+          <div class="content has-text-justified result-summaries">
+            <p id="retrieval-results"><strong>Attribute-aware retrieval.</strong> ControlEmbed transforms only the query while searching the original frozen gallery, preserving compatibility with precomputed large-scale indexes. Base features reach 33.8 mAP on Clevr-4, 43.7 on Stanford40, and 25.2 on ShotBench, while our query mode reaches 77.0, 86.3, and 41.0 mAP, respectively. A single hypernetwork supports multiple categories instead of storing one adapter per attribute.</p>
+            <p id="multi-clustering-results"><strong>Multi-clustering.</strong> The same learned transform can be applied to the full embedding set, followed by Faiss k-means and Hungarian matching. Our global mode reaches 73.0 clustering accuracy on Clevr-4, 80.0 on Stanford40, and 51.6 on ShotBench with near-instant inference time. Our proposed query-focused training method naturally handles this attribute disentanglement setting and achieves the highest average clustering accuracy across datasets while using a single transformation network trained once for all attributes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-variable is-5 result-tables">
+        <div class="column">
+          <figure>
+            <img class="paper-figure paper-table"
+                 src="./static/images/main_retrieval.svg"
+                 alt="Table comparing frozen-gallery retrieval mAP for ControlEmbed and baseline methods on Clevr-4, Stanford40, and ShotBench."
+                 loading="lazy">
+            <figcaption class="figure-caption"><strong>Table 1:</strong> Frozen-gallery attribute-aware retrieval results reported as mAP averaged across dataset taxonomies. ControlEmbed simultaneously handles multiple categories with one set of weights while substantially improving performance. † denotes an MLP adapter trained with the multi-positive loss.</figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <figure>
+            <img class="paper-figure paper-table"
+                 src="./static/images/main_clustering.svg"
+                 alt="Table comparing multi-clustering accuracy and inference time for ControlEmbed and baseline methods on Clevr-4, Stanford40, and ShotBench."
+                 loading="lazy">
+            <figcaption class="figure-caption"><strong>Table 2:</strong> Multi-clustering results averaged over 14 attribute categories. Inference time assumes an evaluation set of 5,000 images. ControlEmbed improves performance with minimal compute overhead and near-instant inference. * denotes results reported on the full action set.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="columns is-centered qualitative-result">
+        <div class="column is-four-fifths">
+          <figure>
+            <img class="paper-figure"
+                 src="./static/images/coco_qualitative.svg"
+                 alt="COCO retrieval examples comparing base CLIP similarity with color- and location-conditioned transformations."
+                 style="max-width: 100%; height: auto;">
+            <figcaption class="figure-caption"><strong>Figure 3:</strong> Qualitative attribute-aware retrieval results under different attribute transformation functions. Our text-conditioned query transformations selectively retrieve images that match the specified attribute without losing the scene semantics at first, then prioritize the attribute over general semantics. From top to bottom, we show retrievals for "action", "count", then fine-grained perceptual property "camera angle".</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ablations-qualitative">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Ablations and Qualitative Analysis</h2>
+
+          <h3 class="title is-4">Data efficiency and capacity</h3>
+          <div class="content has-text-justified">
+            <p>Figure 4 shows near-peak Stanford40 performance with six training samples per class. Figure 5 shows less than 1.5% variation while scaling one hypernetwork to 19 attributes and 187 subclasses.</p>
+          </div>
+          <div class="columns is-centered">
+            <div class="column">
+              <figure>
+                <img class="paper-figure"
+                     src="./static/images/clustering_accuracy.png"
+                     alt="Line plot of Stanford40 clustering accuracy versus training samples per class for action, location, and mood."
+                     loading="lazy"
+                     style="max-width: 100%; height: auto;">
+                <figcaption class="figure-caption"><strong>Figure 4:</strong> <strong>Multi-clustering accuracy on Stanford40.</strong> As the number of training images per class varies, the transformation approaches peak action, location, and mood performance with six images per class.</figcaption>
+              </figure>
+            </div>
+            <div class="column">
+              <figure>
+                <img class="paper-figure"
+                     src="./static/images/multi_attr_capacity.png"
+                     alt="Line plot of mean retrieval mAP as one hypernetwork scales to more jointly trained attribute categories."
+                     loading="lazy"
+                     style="max-width: 100%; height: auto;">
+                <figcaption class="figure-caption"><strong>Figure 5:</strong> <strong>Capacity across jointly trained attribute categories.</strong> Mean category mAP remains stable as training scales from one category per model to a unified hypernetwork supporting more attributes.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <h3 class="title is-4">Backbone generalization</h3>
+          <div class="content has-text-justified">
+            <p>Figure 6 shows gains across a diverse set of both uni- and multi-modal backbones: CLIP, SigLIP, DINOv2, and Qwen3-VL-Embed.</p>
+          </div>
+          <figure>
+            <img class="paper-figure"
+                 src="./static/images/backbone_ablation.png"
+                 alt="Comparison of base, query-transformed, and globally transformed retrieval mAP across CLIP, SigLIP, DINOv2, and Qwen3-VL-Embed backbones."
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+            <figcaption class="figure-caption"><strong>Figure 6:</strong> <strong>Retrieval mAP across backbone architectures.</strong> Query and global transformations improve attribute-aware retrieval for CLIP, SigLIP, DINOv2, and Qwen3-VL-Embed representations.</figcaption>
+          </figure>
+
+          <h3 class="title is-4">Embedding geometry</h3>
+          <div class="content has-text-justified">
+            <p>Figure 7 shows shot-size labels changing from entangled clusters to a continuous, interpretable axis after transformation.</p>
+          </div>
+          <figure>
+            <img class="paper-figure"
+                 src="./static/images/tsne_shotsize.svg"
+                 alt="Side-by-side t-SNE plots of shot-size embeddings before and after transformation, colored by shot-size label."
+                 style="max-width: 100%; height: auto;">
+            <figcaption class="figure-caption"><strong>Figure 7:</strong> <strong>Shot-size embedding geometry before and after transformation.</strong> The transformed space changes entangled baseline clusters into a continuous progression through the shot-size taxonomy.</figcaption>
+          </figure>
+
+          <h3 class="title is-4">Cross-domain qualitative behavior</h3>
+          <div class="content has-text-justified">
+            <p>Figure 3 shows color- and location-conditioned similarity on MS-COCO images, despite training the corresponding transforms on smaller source datasets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="conclusion">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Conclusion</h2>
+          <div class="content has-text-justified">
+            <p>We presented a text-conditioned transformation framework that enables fine-grained control over pretrained embedding spaces without modifying encoder weights or recomputing gallery features. A single hypernetwork learns to generate attribute-specific affine transformations from natural-language descriptions, supporting both attribute-aware retrieval and multi-attribute organization with near-zero inference overhead. While the method generalizes across diverse attributes, its expressiveness is currently bounded by the range of categories seen during training. Future work may explore scaling up training to find emergent transformation properties across attributes completely unseen during training.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="bibtex">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">BibTeX</h2>
+      <pre><code>@inproceedings{fioresi2026controlling,
+  title={Controlling Embedding Spaces with Text-Conditioned Transformations},
+  author={Fioresi, Joseph and Caba Heilbron, Fabian and Nathani, Pankaj and Shah, Mubarak and Kafle, Kushal},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026}
+}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>This website is based on the source code of the <a href="https://nerfies.github.io/">Nerfies website</a>, which is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
